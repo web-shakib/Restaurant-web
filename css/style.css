@@ -1,0 +1,365 @@
+* {
+        margin: 0;
+        padding: 0;
+        outline: 0;
+
+}
+
+ul,
+ol {
+        list-style: none;
+}
+
+a {
+        text-decoration: none;
+        display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+        margin: 0;
+        padding: 0;
+}
+
+:root {
+        --Gentium: 'Gentium Book Basic', serif;
+        --yeseva: 'Yeseva One', cursive;
+        --lato: 'Lato', sans-serif;
+        --OpenSans: 'Open Sans', sans-serif;
+}
+
+/* ==============================
+        Common Css End
+============================== */
+
+
+/* ==============================
+        Banner Part Start
+============================== */
+.header_item {
+        padding: 109px 0 140px;
+}
+
+.main_menu ul li a {
+        position: relative;
+        margin-right: 5px;
+}
+
+.main_menu ul li a::before {
+        position: absolute;
+        content: '';
+        top: 0px;
+        left: 0;
+        height: 3px;
+        width: 0;
+        background: #fff;
+        transition: all linear .4s;
+}
+
+.main_menu ul li a::after {
+        position: absolute;
+        content: '';
+        bottom: 0px;
+        right: 0;
+        height: 3px;
+        width: 0;
+        background: #fff;
+        transition: all linear .4s;
+}
+
+.main_menu ul li a:hover::after {
+        width: 100%;
+}
+
+.main_menu ul li{
+        position: relative;
+}
+
+.main_menu ul li:hover::after{
+        height: 100%;
+}
+.main_menu ul li:hover::before{
+        height: 100%;
+}
+.main_menu ul li::after{
+        position: absolute;
+        content: '';
+        bottom: 0;
+        right: 3px;
+        height: 0;
+        width: 3px;
+        background: #fff;
+        transition: all linear .4s;
+        -webkit-transition: all linear .4s;
+        -moz-transition: all linear .4s;
+        -ms-transition: all linear .4s;
+        -o-transition: all linear .4s;
+}
+.main_menu ul li::before{
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        height: 0;
+        width: 3px;
+        background: #fff;
+        transition: all linear .4s;
+        -webkit-transition: all linear .4s;
+        -moz-transition: all linear .4s;
+        -ms-transition: all linear .4s;
+        -o-transition: all linear .4s;
+        z-index: 1;
+}
+
+.main_menu ul li a:hover::before {
+        width: 100%;
+}
+
+.main_menu ul li a:hover {
+        color: white;
+        background: rgba(0, 0, 0, 0.5);
+}
+
+.main_menu ul li a {
+        font-family: var(--Gentium);
+        font-weight: 700;
+        font-size: 21px;
+        color: #fff;
+        transition: all linear .4s;
+        -webkit-transition: all linear .4s;
+        -moz-transition: all linear .4s;
+        -ms-transition: all linear .4s;
+        -o-transition: all linear .4s;
+}
+
+.banner_text h1 {
+        font-family: var(--yeseva);
+        font-size: 90px;
+        color: #fff;
+}
+
+.banner_text img {
+        margin-bottom: 34px;
+}
+
+.banner_text a:last-child {
+        margin-right: 0;
+}
+
+.banner_text a:hover {
+        color: white;
+        border: 2px solid #000;
+        background: rgba(0, 0, 0, .35);
+        scale: 1.1;
+}
+
+.banner_text a {
+        margin-right: 30px;
+        padding: 15px 20px;
+        border: 2px solid #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        font-family: var(--lato);
+        font-size: 18px;
+        background: rgba(255, 255, 255, 0.25);
+        transition: all linear .4s;
+        -webkit-transition: all linear .4s;
+        -moz-transition: all linear .4s;
+        -ms-transition: all linear .4s;
+        -o-transition: all linear .4s;
+}
+
+/* ==============================
+        Banner Part End
+============================== */
+/* ==============================
+        about Part Start
+============================== */
+#about {
+        padding: 100px 0;
+}
+
+.about_text {
+        text-align: center;
+}
+.common_head{
+        text-align: center;
+}
+
+.common_head h3 {
+        font-family: var(--yeseva);
+        font-size: 38px;
+        font-weight: 400;
+}
+
+.common_head img {
+        margin-bottom: 33px;
+}
+
+.about_text p{
+        font-size: var(--lato);
+        font-weight: 400;
+        font-size: 18px;
+}
+
+/* ==============================
+        about Part End
+============================== */
+/* ==============================
+        Ingredients Part Start
+============================== */
+#ingredients{
+        padding: 100px 0;
+}
+.ingredients_content p{
+        font-family: var(--lato) ;
+        font-size: 16px;
+        font-weight: 400;
+
+}
+
+.ingredients_content{
+        padding: 75px 90px;
+        background: rgba(0, 0, 0, 0.5);
+}
+/* ==============================
+        Ingredients Part End
+============================== */
+/* ==============================
+        food-menu Part Start
+============================== */
+#food-menu{
+        padding: 100px 0;
+}
+
+.food-menu-content-2{
+        padding-top: 70px;
+}
+
+.with_underline{
+        position: relative;
+}
+
+.with_underline::after{
+        position: absolute;
+        content: '';
+        top: 30px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: #c89f2d;
+}
+.menu-head{
+        padding-bottom: 20px;
+}
+
+.menu-head h3{
+        font-family: var(--yeseva);
+        font-size: 36px;
+        color: #cc9900;
+}
+
+.menu-head{
+        text-align: center;
+}
+
+.menu_start h5{
+        font-family: var(--yesenva);
+        color: #cc9900;
+}
+/* ==============================
+        food-menu Part End
+============================== */
+
+/* ==============================
+        Review Part Start
+============================== */
+#reviews{
+        padding: 100px 0;
+}
+.review_text{
+        padding: 70px 80px;
+        background: rgba(0, 0, 0, 0.5);
+}
+.review_text h3{
+        font-family: var(--yeseva);
+        font-size: 36px;
+}
+.review_text p{
+        font-family: var(--Gentium);
+        font-size: 25px;
+        font-weight: 700;
+}
+/* ==============================
+        Review Part End
+============================== */
+/* ==============================
+        reservation Part Start
+============================== */
+#reservation{
+        padding: 100px 0;
+}
+
+.reservation_text img{
+        padding-bottom: 33px;
+}
+.reservation_text h3{
+        font-family: var(--yeseva);
+        font-size: 36px;
+        color: #cc9900;
+}
+.reservation_text{
+        font-family: var(--lato);
+}
+/* ==============================
+        reservation Part End
+============================== */
+/* ==============================
+        footer Part Start
+============================== */
+#footer{
+        padding: 100px 0;
+}
+
+.foot_left h6{
+        font-family: var(--yeseva);
+}
+.foot_middle h6{
+        font-family: var(--yeseva);
+}
+.foot_right h6{
+        font-family: var(--yeseva);
+}
+.foot_left p{
+        font-family: var(--OpenSans);
+}
+.foot_middle p{
+        font-family: var(--OpenSans);
+}
+.foot_right p{
+        font-family: var(--OpenSans);
+}
+.foot_left img{
+        padding-bottom: 25px;
+        padding-top: 15px;
+}
+.foot_middle img{
+        padding-bottom: 25px;
+        padding-top: 15px;
+}
+.foot_right img{
+        padding-bottom: 25px;
+        padding-top: 15px;
+}
+/* ==============================
+        footer Part End
+============================== */
